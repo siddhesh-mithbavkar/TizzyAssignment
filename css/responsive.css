@@ -1,0 +1,134 @@
+@media only screen and (max-width: 767px) {
+  .hero-banner {
+    margin-top: 10px;
+  }
+
+  .nav-ban {
+    background-color: #e6fffa;
+    height: fit-content;
+  }
+
+  .hero-left {
+    margin-top: 15px;
+  }
+
+  .hero-title {
+    padding: 0 10px;
+    margin-bottom: 8px;
+  }
+
+  .hero-title h1 {
+    font-size: 28px;
+  }
+
+  .hero-sub-title {
+    padding: 0 10px;
+    margin-bottom: 8px;
+  }
+
+  .hero-sub-title p {
+    font-size: 15px;
+  }
+
+  .search-form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .search-form form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-form .main {
+    min-width: 200px;
+  }
+
+  .globe img {
+    width: 200px;
+  }
+
+  .key-features-heading .title h2 {
+    font-size: 29px;
+  }
+
+  .key-features-heading .subtitle p {
+    font-size: 17px;
+  }
+
+  .key-features-content .features {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .key-features-content .features .card .card-body {
+    text-align: center;
+  }
+
+  .key-features-content .features .card .card-logo img {
+    width: 70px;
+    margin-bottom: 20px;
+  }
+
+  .animated-underline {
+    max-width: 70%; /* or 80%, adjust as needed */
+  }
+
+  .hardware-details .hardware-cards .card {
+    text-align: center;
+  }
+
+  .hero-banner-features h4 {
+    font-size: 22px;
+  }
+
+  .hero-banner-features p {
+    font-size: 16px;
+  }
+
+  .testimonial-body {
+    padding: 10px;
+  }
+
+  /* .money-back p{
+    text-align:left !important;
+  } */
+
+  .money-back .title h4 {
+    font-family: "Inter", "sans-serif";
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .money-back .subtitle p {
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+  }
+
+  .money-back .refund-btn a {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .hardware .subtitle {
+    width: 100%;
+  }
+
+  .accordion {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .callback {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  #mycallback {
+    bottom: 15px;
+    right: 15px;
+  }
+}

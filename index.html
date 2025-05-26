@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <header>
+
+        <section class="nav-ban pb-3 pb-md-5">
+            <nav class="navbar navbar-expand-lg p-4">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="imgs/logo.png" alt="logo" class="img-fluid logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Hosting</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Email</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Domain
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Affiliate</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Page 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Page 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Page 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Support
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="nav-btns d-flex">
+                            <a class="btn" href="#"><i class="fa-solid fa-lock"></i> Login</a>
+                            <a class="btn" href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="hero-banner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Left: Text + Form + Features -->
+                        <div class="col-md-6 order-md-1 order-2">
+                            <div
+                                class="hero-left d-flex flex-column justify-content-between align-items-center align-items-md-start">
+                                <div class="hero-title">
+                                    <h1>Best hosting and domain service you need.</h1>
+                                </div>
+                                <div class="hero-sub-title">
+                                    <p>Number of great hosting options starting from $2.99/mo.
+                                        You get a free domain for 12 months.</p>
+                                </div>
+                                <div class="search-form w-100">
+                                    <form action="#">
+                                        <div class="search-form-group">
+                                            <input class="main" type="text" placeholder="Your domain">
+                                            <div class="suggestion-container">
+                                                <input data-suggestion="on-focus" class="secondary" type="text"
+                                                    placeholder=".com">
+                                                <ul class="suggestion-list p-0">
+                                                    <li>.com</li>
+                                                    <li>.net</li>
+                                                    <li>.live</li>
+                                                    <li>.info</li>
+                                                    <li>.shop</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-secondary mt-2 mt-md-0">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right: Globe Image -->
+                        <div class="col-md-6 order-md-2 order-1 mb-4 mb-md-0">
+                            <div class="hero-right">
+                                <div class="globe d-flex justify-content-center align-items-center">
+                                    <img src="imgs/hero-banner-globe.png" alt="globe" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container d-flex justify-content-center">
+                    <div class="row text-center gy-4 hero-banner-features mt-3 mt-md-5 w-100">
+                        <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
+                            <h4 class="counter" data-target="1500">1,600+</h4>
+                            <p>Success Stories</p>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
+                            <h4 class="counter" data-target="5000">5,000+</h4>
+                            <p>Fast Servers</p>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
+                            <h4>24/7/360</h4>
+                            <p>Customer Support</p>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
+                            <h4 class="counter" data-target="2100">2,100+</h4>
+                            <p>Domains Registered</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <main>
+
+        <section>
+            <div class="container partners mt-3" data-aos="zoom-in">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="partners d-flex justify-content-center py-5 gap-5">
+                            <div class="wordpress">
+                                <img src="imgs/wordpress.png" class="img-fluid" alt="wordpress">
+                            </div>
+                            <div class="cloudflare">
+                                <img src="imgs/cloudflare.png" alt="cloudflare" class="img-fluid">
+                            </div>
+                            <div class="lightspeed">
+                                <img src="imgs/light-speed.png" class="img-fluid" alt="lightspeed">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container key-features-heading text-center mt-5 " data-aos="fade-up">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="title">
+                            <h2>The Key To Tizzy</h2>
+                        </div>
+                        <div class="subtitle">
+                            <p class="animated-underline">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container key-features-content">
+                <div class="row">
+                    <div class="col-xl-6" data-aos="fade-right">
+                        <div class="about-img d-flex justify-content-center align-items-center">
+                            <img src="imgs/about_img.png" alt="about" class="img-fluid bounce-image">
+                        </div>
+                    </div>
+                    <div class="col-xl-6" data-aos="fade-left">
+                        <div class="features">
+                            <div class="card mb-4">
+                                <div
+                                    class="card-body d-flex flex-column flex-md-row justify-content-center align-items-center">
+                                    <div class="card-logo me-md-4">
+                                        <img src="imgs/migration.png" alt="migration" class="img-fluid">
+                                    </div>
+                                    <div class="card-content">
+                                        <h4>Free Migration</h4>
+                                        <p>Want to migrate your website to HostCamp? No problem, we have tools to help
+                                            you migrate your website for free.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div
+                                    class="card-body d-flex flex-column flex-md-row justify-content-center align-items-center">
+                                    <div class="card-logo me-md-4">
+                                        <img src="imgs/ssl.png" alt="migration" class="img-fluid">
+                                    </div>
+                                    <div class="card-content">
+                                        <h4>
+                                            Free SSL</h4>
+                                        <p>Get lifetime free SSL certificate with 1 year of hosting. Website protection
+                                            is a must if you want a safe and secure website.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div
+                                    class="card-body d-flex flex-column flex-md-row justify-content-center align-items-center">
+                                    <div class="card-logo me-md-4">
+                                        <img src="imgs/access-protection.png" alt="migration" class="img-fluid">
+                                    </div>
+                                    <div class="card-content">
+                                        <h4>Access Management</h4>
+                                        <p>Simple way to access your files, emails and database. We have removed the
+                                            complexity; Enjoy powerful cpanel.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container hardware text-center mb-4" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title">
+                            <h2>Understand Hardware</h2>
+                        </div>
+                        <div class="subtitle">
+                            <p class="animated-underline">We have designed easy to use Cpanel and a simple process for
+                                our customers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container hardware-details" data-aos="fade-right">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="hardware-cards">
+                            <div class="card d-flex flex-md-row justify-content-between align-items-center rounded-0"
+                                data-aos="zoom-out-down">
+                                <div class="mb-3">
+                                    <h3>HostCamp 6 vCPU High-CPU Droplet</h3>
+                                </div>
+                                <div class="mb-3">
+                                    <h3>4GB RAM</h3>
+                                    <span>INCLUDED</span>
+                                </div>
+                                <div class="mb-3">
+                                    <h3>256 GB SSD</h3>
+                                    <span>INCLUDED</span>
+                                </div>
+                                <div class="mb-3">
+                                    <h3>4TB</h3>
+                                    <span>BANDWIDTH INCLUDED
+                                    </span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+
+                            <div class="card d-flex flex-md-row justify-content-between align-items-center rounded-0"
+                                data-aos="zoom-out-up">
+                                <div class="mb-3">
+                                    <h3>HostCamp 6 vCPU High-CPU Droplet</h3>
+                                </div>
+                                <div class="mb-3">
+                                    <h3>4GB RAM</h3>
+                                    <span>INCLUDED</span>
+                                </div>
+                                <div class="mb-3">
+                                    <h3>256 GB SSD</h3>
+                                    <span>INCLUDED</span>
+                                </div>
+                                <div class="mb-3">
+                                    <h3>4TB</h3>
+                                    <span>BANDWIDTH INCLUDED
+                                    </span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+
+                            <div class="card d-flex flex-md-row justify-content-between align-items-center  rounded-0"
+                                data-aos="zoom-out-left">
+                                <div class="mb-3">
+                                    <h3>HostCamp 6 vCPU High-CPU Droplet</h3>
+                                </div>
+                                <div class="mb-3">
+                                    <h3>4GB RAM</h3>
+                                    <span>INCLUDED</span>
+                                </div>
+                                <div class="mb-3">
+                                    <h3>256 GB SSD</h3>
+                                    <span>INCLUDED</span>
+                                </div>
+                                <div class="mb-3">
+                                    <h3>4TB</h3>
+                                    <span>BANDWIDTH INCLUDED
+                                    </span>
+                                </div>
+                                <div class="mb-3">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+
+                            <div class="card d-flex flex-md-row justify-content-between align-items-center  rounded-0"
+                                data-aos="zoom-out-right">
+                                <div class="mb-3">
+                                    <h3>HostCamp 6 vCPU High-CPU Droplet</h3>
+                                </div>
+                                <div class="mb-3">
+                                    <h3>4GB RAM</h3>
+                                    <span>INCLUDED</span>
+                                </div>
+                                <div class="mb-3">
+                                    <h3>256 GB SSD</h3>
+                                    <span>INCLUDED</span>
+                                </div>
+                                <div class="mb-3">
+                                    <h3>4TB</h3>
+                                    <span>BANDWIDTH INCLUDED
+                                    </span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="container featured-clients text-center" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title">
+                            <h2>Featured client stories</h2>
+                        </div>
+                        <div class="subtitle">
+                            <p class="animated-underline">Inspirational case studies of our clients from all around the
+                                word
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container testimonials">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="testimonial-cards d-flex flex-wrap justify-content-center owl-carousel owl-theme">
+
+                            <div class="item testimonial-card d-flex flex-column mt-5">
+                                <div class="testimonial-header"></div>
+                                <img src="imgs/testimonial-prof-3.jpg" alt="testimonial-prof-3"
+                                    class="testimonial-img w-25 mx-auto">
+                                <div class="testimonial-body d-flex flex-column justify-content-between flex-grow-1">
+                                    <p class="text-muted"> We were constantly facing spam and deliverability issues with
+                                        our previous provider. Switching to Tizzy Mail made a huge difference — inbox
+                                        delivery improved overnight, and our internal communication became seamless.
+                                    </p>
+                                    <div class="stars mb-2">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold">IT Manager of MNC</h5>
+                                        <p class="text-primary">Mumbai, India</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item testimonial-card d-flex flex-column mt-5">
+                                <div class="testimonial-header"></div>
+                                <img src="imgs/testimonial-prof-4.jpg" alt="testimonial-prof-3"
+                                    class="testimonial-img w-25 mx-auto">
+                                <div class="testimonial-body d-flex flex-column justify-content-between flex-grow-1">
+                                    <p class="text-muted"> Our support tickets regarding email downtime were piling up
+                                        every week. After moving to Tizzy Mail, we've experienced 99.9% uptime and quick
+                                        support response, which has made our IT team's job much easier.
+                                    </p>
+                                    <div class="stars mb-2">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold">Owner of 22 Year old IT company</h5>
+                                        <p class="text-primary">Delhi, India</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item testimonial-card d-flex flex-column mt-5">
+                                <div class="testimonial-header"></div>
+                                <img src="imgs/testimonial-prof-5.jpg" alt="testimonial-prof-3"
+                                    class="testimonial-img w-25 mx-auto">
+                                <div class="testimonial-body d-flex flex-column justify-content-between flex-grow-1">
+                                    <p class="text-muted"> Managing email accounts for our remote team was a nightmare.
+                                        Tizzy Mail offered a clean interface and robust admin controls that helped us
+                                        streamline user onboarding and resolve issues quickly.
+                                    </p>
+                                    <div class="stars mb-2">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold">Founder of SaaS Startup</h5>
+                                        <p class="text-primary">Bengaluru, India</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item testimonial-card d-flex flex-column mt-5">
+                                <div class="testimonial-header"></div>
+                                <img src="imgs/testimonial-prof-6.jpg" alt="testimonial-prof-3"
+                                    class="testimonial-img w-25 mx-auto">
+                                <div class="testimonial-body d-flex flex-column justify-content-between flex-grow-1">
+                                    <p class="text-muted"> As a growing startup, we couldn’t afford expensive email
+                                        solutions. Tizzy Mail gave us an affordable yet powerful alternative without
+                                        compromising performance or reliability.
+                                    </p>
+                                    <div class="stars mb-2">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold">CTO at FinTech Company</h5>
+                                        <p class="text-primary">Pune, India</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item testimonial-card d-flex flex-column mt-5">
+                                <div class="testimonial-header"></div>
+                                <img src="imgs/testimonial-prof-1.jpg" alt="testimonial-prof-1"
+                                    class="testimonial-img w-25 mx-auto">
+                                <div class="testimonial-body d-flex flex-column justify-content-between flex-grow-1">
+                                    <p class="text-muted"> We were preparing to shift to Microsoft 365, but Tizzy Mail
+                                        proved to be the right solution — faster setup, easier management, and excellent
+                                        support that actually listens to our problems.
+                                    </p>
+                                    <div class="stars mb-2">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold">Head of IT Infrastructure</h5>
+                                        <p class="text-primary">Gurgaon, India</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item testimonial-card d-flex flex-column mt-5">
+                                <div class="testimonial-header"></div>
+                                <img src="imgs/testimonial-prof-2.jpg" alt="testimonial-prof-2"
+                                    class="testimonial-img w-25 mx-auto">
+                                <div class="testimonial-body d-flex flex-column justify-content-between flex-grow-1">
+                                    <p class="text-muted"> Our employees were frustrated with delays and missing emails.
+                                        With Tizzy Mail, we saw immediate improvements in delivery speed and issue
+                                        resolution. It’s a game-changer for our operations.
+                                    </p>
+                                    <div class="stars mb-2">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold">Senior DevOps Consultant</h5>
+                                        <p class="text-primary">Jaipur, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="container faq-heading text-center">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="title">
+                            <h2>We've Got The Answers You Need</h2>
+                        </div>
+                        <div class="subtitle">
+                            <p class="animated-underline">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container faq-content">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="accordion w-75 mx-auto mt-4" id="faqAccordion">
+                            <div class="accordion-item mb-4">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        1. What is Cloud Business Email Hosting Service?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Ans. Cloud Email Hosting is a service setup on Cloud Computing Environment.
+                                        Cloud enables high
+                                        availability or uptime of service along with safety and security of stored data.
+                                        Backup and
+                                        disaster recovery is very fast on Cloud servers.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item mb-4">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        2. What is Tizzy®Mail?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Ans. Tizzy®Mail is a Cloud Business Email Hosting Solution provided by
+                                        Tizzy®Cloud. It is hosted
+                                        on the most advanced Cloud Computing Infrastructure of the world.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item mb-4">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        3. We have not heard about Tizzy®Mail so How old is Tizzy®Mail?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Ans. Tizzy®Mail has a consistent growth record of more than 7 years. We have
+                                        thousands of email
+                                        users comprises of small and big corporate companies.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item mb-4">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        5.How to renew the services next year?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Ans. You will get a daily email notification on your registered email address 7
+                                        days prior to the expiry date. You can reply to the email and make payment as
+                                        per the invoice to process the renewal.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="about-img d-flex justify-content-center">
+                            <img src="imgs/faq-img.png" alt="about" class="img-fluid bounce-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mx-5">
+            <div class="container money-back p-md-5 p-3 text-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title mb-4">
+                            <h4>30 day money-back gurantee
+                            </h4>
+                        </div>
+                        <div class="subtitle mb-4">
+                            <p>If you are not 100% satisfied with the HostCamp we'll refund your payment.
+                            </p>
+                        </div>
+                        <div class="refund-btn">
+                            <a href="#" class="btn rounded-5">Get Refund</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="mycallback">
+                <button class="callback">
+                    <i class="fa-solid fa-phone"></i>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="container py-5 mt-5">
+                <div class="row gy-4">
+                    <!-- Logo and Description -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-logo mb-3">
+                            <img src="imgs/logo.png" class="img-fluid" alt="footer-logo">
+                        </div>
+                        <div class="footer-desc px-3 px-md-0">
+                            <p>
+                                We are a web hosting company on a mission to assist everyone who goes online in
+                                achieving
+                                success. We accomplish this by continuously developing server technology, offering
+                                professional assistance, and making the web hosting experience as seamless as possible.
+                            </p>
+                        </div>
+                        <div class="footer-payments mt-3">
+                            <img src="imgs/visa.png" class="img-fluid" alt="visa">
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <div class="footer-links">
+                            <h5 class="mb-3">Quick Links</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-decoration-none">Home</a></li>
+                                <li><a href="#" class="text-decoration-none">About</a></li>
+                                <li><a href="#" class="text-decoration-none">Services</a></li>
+                                <li><a href="#" class="text-decoration-none">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Services Links -->
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <div class="footer-links">
+                            <h5 class="mb-3">Services</h5>
+                            <ul class="list-unstyled p-0">
+                                <li><a href="#" class="text-decoration-none">Hosting</a></li>
+                                <li><a href="#" class="text-decoration-none">Domain</a></li>
+                                <li><a href="#" class="text-decoration-none">Email Hosting</a></li>
+                                <li><a href="#" class="text-decoration-none">VPS Hosting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="address">
+                            <h5 class="mb-3">Address</h5>
+                            <ul class="list-unstyled p-0">
+                                <li>
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="fa-solid fa-house me-2"></i> Mumbai, Maharashtra
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+911234567819" class="text-decoration-none">
+                                        <i class="fa-solid fa-phone me-2"></i> +91 1234567819
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:yourname@gmail.com" class="text-decoration-none">
+                                        <i class="fa-solid fa-envelope me-2"></i> yourname@gmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="social-links py-4">
+                                <ul class="list-unstyled p-0 d-flex justify-content-center gap-3 m-0">
+                                    <li>
+                                        <a href="#" class="social-icon" title="Instagram">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="social-icon" title="Facebook">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="social-icon" title="LinkedIn">
+                                            <i class="fa-brands fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="social-icon" title="Twitter / X">
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="social-icon" title="Google Plus">
+                                            <i class="fa-brands fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="social-icon" title="WhatsApp">
+                                            <i class="fa-brands fa-whatsapp"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="copyright text-center">
+                    <p class="mb-0">&copy; 2025 Hosting Company</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
