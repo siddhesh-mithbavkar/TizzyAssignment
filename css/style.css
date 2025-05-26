@@ -43,6 +43,11 @@ body {
   letter-spacing: 0.5px;
 }
 
+.navbar.scrolled {
+  background-color: #0d9488;
+  color: #fff;
+}
+
 .navbar .logo {
   width: 100px;
 }
